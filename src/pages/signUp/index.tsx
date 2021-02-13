@@ -7,8 +7,8 @@ import Button from '../../components/button';
 import { Container, Content, Background } from './styles';
 
 const SignUp: React.FC = () => {
-  function handleSubmit(data: object): void {
-    console.log('DATA: ', data);
+  function handleSubmit(): void {
+    console.log('DATA: ');
   }
 
   return (
