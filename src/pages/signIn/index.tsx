@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import React, { useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
@@ -52,10 +53,10 @@ const SignIn: React.FC = () => {
           <a href="/forgot">Esqueci minha senha</a>
         </Form>
 
-        <a href="/signUp">
+        <Link to="/signUp">
           <FiLogIn />
           Criar conta
-        </a>
+        </Link>
       </Content>
       <Background />
     </Container>
