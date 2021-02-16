@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import DayPicker, { DayModifiers } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import { FiClock, FiPower } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import {
   Container,
@@ -36,7 +37,9 @@ const Dashboard: React.FC = () => {
             />
             <div>
               <span>Bem-vindo,</span>
-              <strong>Rafael Silva</strong>
+              <Link to="/profile">
+                <strong>Rafael Silva</strong>
+              </Link>
             </div>
           </Profile>
 
